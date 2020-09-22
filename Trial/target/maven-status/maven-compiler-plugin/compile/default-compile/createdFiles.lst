@@ -1,0 +1,5 @@
+com\main\controller\TrialController.class
+com\main\controller\UserController.class
+com\main\app\TrialApp.class
+com\main\model\User.class
+com\main\service\UserService.class
