@@ -1,5 +1,11 @@
+com\main\service\UserCRUDService.class
+com\main\model\Employee.class
+com\main\service\UserService.class
+com\main\controller\UserCRUDController.class
+com\main\exceptions\UserNotFoundException.class
 com\main\controller\TrialController.class
 com\main\controller\UserController.class
 com\main\app\TrialApp.class
+com\main\repository\EmployeeRepository.class
+com\main\app\SwaggerConfiguration.class
 com\main\model\User.class
-com\main\service\UserService.class

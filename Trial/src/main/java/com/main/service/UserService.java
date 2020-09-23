@@ -5,6 +5,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.main.exceptions.UserNotFoundException;
