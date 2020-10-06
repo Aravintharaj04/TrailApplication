@@ -1,6 +1,8 @@
 package com.main.app;
 
 import java.util.Arrays;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -23,7 +25,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class TrialApp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		final Logger log = LoggerFactory.getLogger(TrialApp.class);
 				SpringApplication.run(TrialApp.class, args);
+				
+				log.info("Application started for TrailApp");
 				
 	}
 
