@@ -5,9 +5,6 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -20,14 +17,13 @@ public class UserService {
 	 List<User> userList=new ArrayList<>(); 
 	
 	 int usersCount=3;
-	 final Logger log = LoggerFactory.getLogger(UserService.class);
 	
 	 DateFormat df = new SimpleDateFormat("MM-dd-yyyy");
 	
 	{
 		
 			try {
-				userList.add(new User(1,"Aravind",df.parse("05-06-1996"),"India") );
+				userList.add(new User(1,"Kishore",df.parse("05-06-1996"),"India") );
 				userList.add(new User(2,"George",df.parse("09-02-1996"),"US") );
 				userList.add(new User(3,"Mathew",df.parse("04-09-1996"),"France") );
 			} catch (ParseException e) {
@@ -69,7 +65,6 @@ public class UserService {
 				return user;
 			}
 		}
-		log.info("User is deleted");
 		return null;
 	}
 	
