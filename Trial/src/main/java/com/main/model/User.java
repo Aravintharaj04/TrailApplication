@@ -2,13 +2,17 @@ package com.main.model;
 
 import java.util.Date;
 
+import javax.persistence.GeneratedValue;
+
+import org.springframework.data.annotation.Id;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class User {
 	
-	public static final long serialVersionUID = 42L;
-	
-	public int id;
+	@Id
+	@GeneratedValue
+	public Integer id;
 	public String name;
 	
 	@JsonFormat(pattern="MM-dd-yyyy")
@@ -16,7 +20,11 @@ public class User {
 	
 	public String country;
 	
-	public User(int id, String name, Date dOB, String country) {
+	protected User() {
+
+	}
+	
+	public User(Integer id, String name, Date dOB, String country) {
 		super();
 		this.id = id;
 		this.name = name;

@@ -1,7 +1,7 @@
 com\main\service\UserCRUDService.class
-com\main\model\Employee.class
 com\main\service\UserService.class
 com\main\controller\UserCRUDController.class
+com\main\model\Employee_Table.class
 com\main\exceptions\UserNotFoundException.class
 com\main\controller\TrialController.class
 com\main\controller\UserController.class
