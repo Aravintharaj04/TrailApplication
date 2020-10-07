@@ -5,6 +5,9 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+
+
+
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +20,9 @@ public class UserService {
 	 List<User> userList=new ArrayList<>(); 
 	
 	 int usersCount=3;
+
+	 final Logger log = LoggerFactory.getLogger(UserService.class);
+
 	
 	 DateFormat df = new SimpleDateFormat("MM-dd-yyyy");
 	
@@ -65,6 +71,7 @@ public class UserService {
 				return user;
 			}
 		}
+		log.info("User is deleted");
 		return null;
 	}
 	
