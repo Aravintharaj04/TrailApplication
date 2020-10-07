@@ -41,7 +41,7 @@ public class UserCRUDController {
 		return new ResponseEntity<Object>(emp,HttpStatus.OK);
 	}
 	
-	@GetMapping("/jpa/empById/{id}")
+	@GetMapping("/jpa/employeeById/{id}")
 	public ResponseEntity<Object> retrieveEmployeeById(@PathVariable Long id ) {
 		Optional<Employee_Table> employee= userCRUDService.getAllEmployeeDetailsbyID(id);
 		
